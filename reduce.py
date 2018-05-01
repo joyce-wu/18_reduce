@@ -23,7 +23,8 @@ def word_freq(word, f):
 
 #find frequency of group of words
 def words_freq(phrase, f):
-
+    split_phrase = phrase.split()
+    #print(split_phrase)
     #finds if phrase is found by iterating through list of words
     lst = [1 for w in range(len(f)) if split_phrase == sample[w: w+len(split_phrase)]]
     if lst == []: #no appearance of phrase
